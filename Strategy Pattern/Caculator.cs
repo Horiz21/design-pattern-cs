@@ -38,7 +38,7 @@
 	}
 
 	// 主函数
-	public class Caculator {
+	public class CaculatorMain {
 		public static void SingleRun() {
 			CaculatorEnvironment caculator = new(new AddCaculate());  // 创建计算器环境，初始设置其策略为加法
 			Console.WriteLine(caculator.DoCaculate(1, 3));  // 实施策略

@@ -66,7 +66,7 @@
 	}
 
 	// 主函数
-	public class DuckSimulator {
+	public class DuckSimulatorMain {
 		public static void SingleRun() {
 			Duck normalDuck = new(new Fly(), new Quack()); // 能叫能飞的普通鸭子
 			Duck rubberDuck = new(new CantFly(), new Squeak()); // 能吱吱叫不能飞的橡皮鸭子

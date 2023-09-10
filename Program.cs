@@ -1,4 +1,5 @@
-﻿using Design_Pattern.Strategy_Pattern;
+﻿using Design_Pattern.Observer_Pattern;
+using Design_Pattern.Strategy_Pattern;
 
 internal class Program {
 	private static void Main(string[] args) {
@@ -6,6 +7,7 @@ internal class Program {
 		if (args.Length == 0) {
 			Console.WriteLine("1. Strategy - Caculator");
 			Console.WriteLine("2. Strategy - Duck Simulator");
+			Console.WriteLine("3. Observer - Weather Station");
 			Console.Write("Please input pattern ID: ");
 			while (!int.TryParse(Console.ReadLine(), out id)) {
 				Console.Write("Wrong ID format! Retry: ");
@@ -16,10 +18,13 @@ internal class Program {
 		}
 		switch (id) {
 			case 1:
-				Caculator.SingleRun();
+				CaculatorMain.SingleRun();
 				break;
 			case 2:
-				DuckSimulator.SingleRun();
+				DuckSimulatorMain.SingleRun();
+				break;
+			case 3:
+				WeatherStationMain.SingleRun();
 				break;
 			default:
 				Console.WriteLine("Unknown pattern!");
