@@ -16,3 +16,11 @@
 #### 观察者模式
 
 1. WeatherStation - 气象站
+1. NumberConverter - 数字转换器
+
+### 结构型模式
+
+#### 装饰器模式
+
+1. Alonbarks - 奶茶店
+1. ShapeDecorator - 形状装饰器
