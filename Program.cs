@@ -1,4 +1,5 @@
-﻿using Design_Pattern.Decorator_Pattern;
+﻿using Design_Pattern.Abstract_Factory_Pattern;
+using Design_Pattern.Decorator_Pattern;
 using Design_Pattern.Factory_Pattern;
 using Design_Pattern.Observer_Pattern;
 using Design_Pattern.Strategy_Pattern;
@@ -15,6 +16,7 @@ internal class Program {
 			Console.WriteLine("6. Decorator - Shape Decorator");
 			Console.WriteLine("7. Factory - Simple/Static Pizza (Actually they're not Factory Pattern)");
 			Console.WriteLine("8. Factory - Logger");
+			Console.WriteLine("9. Abstract Factory - Cloth Store");
 			Console.Write("Please input pattern ID: ");
 			while (!int.TryParse(Console.ReadLine(), out id)) {
 				Console.Write("Wrong ID format! Retry: ");
@@ -47,6 +49,9 @@ internal class Program {
 				break;
 			case 8:
 				LoggerMain.SingleRun();
+				break;
+			case 9:
+				ClothStoreMain.SingleRun();
 				break;
 			default:
 				Console.WriteLine("Unknown pattern!");

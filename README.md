@@ -13,6 +13,10 @@
 1. SimpleOrStaticPizzaFactory - 简单工厂和静态工厂（事实上它们并不是工厂模式，但用到了工厂模式的思想）
 1. Logger - 日志记录器
 
+#### 抽象工厂模式
+
+ClothStore - 衣服店
+
 ### 行为型模式
 
 #### 策略模式
